@@ -1,0 +1,23 @@
+<%- include("./partials/header.ejs") %>
+<title>Login Page</title>
+<%- include("./partials/navbar.ejs") %>
+
+<div class="container mt-4">
+     <h1 class="mb-3 text-center">Login Form</h1>
+     <form action="/post-login" method="post">
+     <div class="  mb-3">
+       <label for="email" class="form-label">Email address</label>
+       <input type="email" class="form-control" id="email" aria-describedby="email" name="email"  required>
+
+     </div>
+     <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+     </div>
+     <div class="mb-3">
+          Don't have an account ? <a class="navbar-brand" href="/signup" style="font-weight: bolder;">Signup</a>
+        </div>
+     <button type="submit" class="btn btn-primary">Login</button>
+</form>
+</div>
+<%- include("./partials/footer.ejs") %>

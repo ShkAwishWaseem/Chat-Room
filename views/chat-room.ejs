@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/style.css">
+     <title>Chat Room</title>     
+</head>
+<body>
+     <section class="chat__section">
+          <!-- <%- include("./partials/navbar.ejs") %> -->
+          <!-- <h1 class="my-3 text-center" >Welcome <%= locals.fullName %></h1> -->
+          <div class="brand">
+              <img src="/img/logo.png" alt="logo" class="logo">
+             <h1>Chatting Room</h1>
+             <a href="/logout">
+               <button>Logout</button>
+             </a>
+          </div>
+          <div class="message__area">
+     
+          </div>
+          <div class="text-section"> 
+              <textarea  id="textarea" cols="30" rows="1" placeholder="Enter your message"></textarea><button id="sendBtn">Send</button>
+          </div>
+      </section>
+
+     <!-- For loading Client Socket Library -->
+     <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+     <script src="/client.js">
+     // var socket = io();
+
+     // const message = document.getElementById("message");
+     // const btn = document.getElementById("sendBtn");
+     // const allMessages = document.getElementById("messages");
+     
+     // io.on("message" , message => {
+     //      const p = document.createElement("p");
+     //      p.innerText = message;
+     //      allMessages.appendChild(p)
+     // })
+     
+     // btn.addEventListener("click"  , () => {
+     //      const userMessage = message.value;
+     //      io.emit("message" , userMessage);
+     //      message.value =  " " ;
+     // })
+     // </script>
+</body>
+</html>
+
+
+
