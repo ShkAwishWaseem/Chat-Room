@@ -9,7 +9,7 @@ A real-time chat application built with Socket.io and React.
 - Responsive UI  
 
 ## Technologies  
-- **Frontend**: React, Tailwind CSS  
+- **Frontend**: Template engines (EJS) 
 - **Backend**: Node.js, Express  
 - **Real-time Communication**: Socket.io  
 
@@ -24,5 +24,5 @@ cd ../frontend && npm install
 
 # Backend (Socket.io server)  
 cd backend && npm start  
-# Frontend (React app)  
-cd ../frontend && npm start  
+
+
